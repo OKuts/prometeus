@@ -1,0 +1,29 @@
+header {
+  height: 70px;
+  background-color: $color2;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+
+  span {
+    margin-right: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid white;
+      cursor: pointer;
+    }
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+  }
+}
+
+
+
+

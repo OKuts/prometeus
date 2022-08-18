@@ -1,0 +1,24 @@
+$color1: #FFC2C7;
+$color2: #A9BFE4;
+$color3: #989EC3;
+$color4: #351F21;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 760px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 55px;
+  width: 138px;
+  display: inline-block;
+}
+
+
