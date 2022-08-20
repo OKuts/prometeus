@@ -10,9 +10,10 @@ interface NavInfoProps {
 export const NavInfo: FC<NavInfoProps> = ({content}) => {
   return (
     <section>
-      <h3>{content.title}</h3>
+      <h3 className={'title'}>{content.title}</h3>
       <ul>
-        {content.list.map(li => <li className={'contacts_item'}>{li}</li>)}
+        {content.list.map((li, i) =>
+          <li key={i} className={'contacts_item'}>{li}</li>)}
       </ul>
     </section>
   )

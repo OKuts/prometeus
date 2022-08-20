@@ -1,6 +1,5 @@
 export const Header = () => {
   return (
-    <div className={'container'}>
       <header>
         <img className={'logo'} src='./images/logo.png' alt={'logo'}/>
         <nav>
@@ -14,6 +13,5 @@ export const Header = () => {
           <img className={'icon'} src='./images/basket.png' alt={'icon'}/>
         </div>
       </header>
-    </div>
   )
 }

@@ -1,4 +1,5 @@
 import {NavInfo} from "./NavInfo";
+import {Mail} from "./Mail";
 
 export const Footer = () => {
   const contacts = {
@@ -16,15 +17,14 @@ export const Footer = () => {
   }
 
   return (
-    <div className={'container'}>
       <footer className={'footer'}>
         <img className={'logo'} src='./images/logo.png' alt={'logo'}/>
         <div className={'footer__info'}>
           <NavInfo content={contacts}/>
           <NavInfo content={info}/>
           <NavInfo content={catalog}/>
+          <Mail/>
         </div>
       </footer>
-    </div>
   )
 }

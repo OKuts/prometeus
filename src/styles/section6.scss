@@ -1,0 +1,39 @@
+.section6 {
+  height: 470px;
+  padding: 50px 0 0 0;
+}
+
+.select {
+  display: grid;
+  grid-template-rows: repeat(2, 145px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 50px;
+  margin-top: 50px;
+
+  .select_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+
+    p {
+      text-align: center;
+      font-family: 'Source Sance Pro';
+      font-size: 13px;
+      white-space: pre-line;
+      margin-top: 20px;
+    }
+  }
+
+  .number {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lora;
+    box-shadow: 0px 9px 19px 0px $color1;
+  }
+}

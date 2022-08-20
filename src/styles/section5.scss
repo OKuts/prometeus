@@ -1,0 +1,63 @@
+.section5 {
+  background-color: rgb(229, 236, 247);
+  padding: 20px 0;
+}
+
+.responses {
+  display: flex;
+  flex-direction: column;
+
+  .response {
+    display: flex;
+    margin-top: 30px;
+
+    .response_item {
+      width: 60%;
+
+      justify-content: right;
+
+      span {
+        color: $color2;
+        font-family: "Source Sance Pro", serif;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      span::before {
+        content: "_____";
+        display: block;
+        padding-bottom: 10px;
+        color: $color1;
+      }
+    }
+  }
+
+  .response:nth-child(2n+1) {
+    justify-content: right;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  input, textarea {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  input {
+    height: 25px;
+  }
+
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  button {
+    box-shadow: 1px 1px 5px 1px $color2;
+  }
+}

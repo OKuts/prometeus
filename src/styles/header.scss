@@ -1,7 +1,7 @@
 header {
   height: 70px;
   background-color: $color2;
-  padding: 8px;
+  //padding: 8px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,6 +11,8 @@ header {
     margin-right: 20px;
     padding: 5px 0;
     border-bottom: 1px solid transparent;
+    font-family: 'Lora SemiBold', serif;
+    font-size: 14px;
 
     &:hover {
       border-bottom: 1px solid white;

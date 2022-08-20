@@ -1,0 +1,48 @@
+.section4 {
+  padding-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px $color1;
+  padding-bottom: 10px;
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  .circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: $color5;
+    border: 1px solid $color1;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .active {
+    background-color: $color1;
+  }
+}

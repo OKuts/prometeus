@@ -1,0 +1,20 @@
+.sign {
+  width: 236px;
+  height: 26px;
+  background-color: white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    height: 26px;
+    width: 130px;
+    border: none;
+    margin-left: 13px;
+  }
+}
+
+.copyright {
+  font-family: "Source Sance Pro", sans-serif;
+  font-size: 11px;
+}
