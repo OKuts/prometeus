@@ -12,7 +12,7 @@ export const Section3 = () => {
           <p>Працюємо для вас</p>
           <div className={'item_list'}>
             {data.map(([img, text]) =>
-              <div key={text}>
+              <div key={img}>
                 <img src={`/images/${img}`} alt=""/>
                 <p>{text}</p>
               </div>

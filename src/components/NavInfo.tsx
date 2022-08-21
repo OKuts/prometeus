@@ -13,7 +13,7 @@ export const NavInfo: FC<NavInfoProps> = ({content}) => {
       <h3 className={'title'}>{content.title}</h3>
       <ul>
         {content.list.map((li, i) =>
-          <li key={i} className={'contacts_item'}>{li}</li>)}
+          <li key={li} className={'contacts_item'}>{li}</li>)}
       </ul>
     </section>
   )

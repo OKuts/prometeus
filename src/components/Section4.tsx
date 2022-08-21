@@ -20,12 +20,12 @@ export const Section4 = () => {
   }, [])
 
   return (
-    <section className={'section4'}>
+    <section className={'section4'} id={'catalog'}>
       <div className={'content'}>
         <h2 className={'h2'}>Каталог</h2>
         <div className={'cards'}>
           {cards.map((card, i) =>
-            <Card key = {i} card = {card} id={i}/>
+            <Card key = {card.name} card = {card} id={i}/>
           )}
         </div>
         <Pagination current = { current }/>

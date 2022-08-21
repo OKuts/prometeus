@@ -7,10 +7,10 @@ export const Section2 = () => {
     ['own_bouquet.png', '"Свій букет"']]
 
   return (
-    <section className={'section2'}>
+    <section className={'section2 content'} id={'about'}>
       <div className={'flowers'}>
         {flowers.map((el, i) =>
-          <div className={'flowers_bg'} key={i}>
+          <div className={'flowers_bg'} key={flowers[i][0]}>
             <img src={`/images/${flowers[i][0]}`} alt="flowers"/>
             <div>{flowers[i][1]}</div>
           </div>
@@ -25,7 +25,7 @@ export const Section2 = () => {
             ніжні
             фіалки, усипані квітами, аспарагуси, фікуси.</p>
         </div>
-        <Social cn={'vertical'}/>
+        {/*<Social cn={'vertical'}/>*/}
       </div>
 
     </section>

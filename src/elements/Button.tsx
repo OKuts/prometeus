@@ -6,7 +6,12 @@ interface ButtonProps {
   background: string
 }
 
-export const Button: FC<ButtonProps> = ({text, background, border}) => {
+export const Button: FC<ButtonProps> = (
+  {
+    text,
+    background,
+    border
+  }) => {
   return (
     <button className={`${background} ${border} button`}>{text}</button>
   )

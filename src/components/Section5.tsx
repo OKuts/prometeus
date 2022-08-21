@@ -20,11 +20,9 @@ export const Section5 = () => {
 
   if (!comments.length) return null
 
-  console.log(comments)
-
   return (
     <section className={'section5'}>
-      <div/>
+      <img src="/images/flowers 1.png" alt=""/>
       <div className={'content responses'}>
         <h2 className={'h2'}>Відгуки</h2>
         <div className={'response'}>
@@ -47,6 +45,7 @@ export const Section5 = () => {
         <textarea placeholder={'Ваш відгук:'}></textarea>
         <Button text={'Відправити'} border={'border1'} background={'color1'}/>
       </div>
+      <img src="/images/flowers 2.png" alt=""/>
     </section>
   )
 }

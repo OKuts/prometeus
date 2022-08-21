@@ -17,7 +17,7 @@ export const Footer = () => {
   }
 
   return (
-      <footer className={'footer'}>
+      <footer className={'footer'} id={'footer'}>
         <img className={'logo'} src='./images/logo.png' alt={'logo'}/>
         <div className={'footer__info'}>
           <NavInfo content={contacts}/>

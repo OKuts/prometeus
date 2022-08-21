@@ -12,8 +12,8 @@ export const Section6 = () => {
       <h2 className={'h2'}>Доставка і оплата</h2>
       <div className={'select'}>
         {select.map((el, i) =>
-          <div key={1} className={'select_item'}>
-            <div className={'number'}>{i}</div>
+          <div key={i} className={'select_item'}>
+            <div className={'number'}>{i + 1}</div>
             <p>{el}</p>
           </div>
         )}
