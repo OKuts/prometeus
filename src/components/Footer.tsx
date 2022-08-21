@@ -4,7 +4,7 @@ import {Mail} from "./Mail";
 export const Footer = () => {
   const contacts = {
     title: 'Контакти',
-    list: ['095 000 00 00', '095 000 00 00', 'Ми працюємо цілодобово'],
+    list: ['095 000 00 00', '095 000 10 00', 'Ми працюємо цілодобово'],
   }
   const info = {
     title: 'Інформація',

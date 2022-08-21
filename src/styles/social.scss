@@ -2,12 +2,12 @@
   text-align: center;
 
   img {
-    width: 20px;
-    height: 22px;
-    margin-top: 10px;
+    width: 2rem;
+    height: 2.2rem;
+    margin-top: 1rem;
 
     &:nth-child(2) {
-      margin: 0 5px 0 6px;
+      margin: 0 0.5rem 0 0.6rem;
     }
 
     &:last-child {
@@ -22,13 +22,13 @@
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: 30px;
-  top: 240px;
+  right: 3rem;
+  top: 24rem;
 
   img {
-    width: 20px;
-    height: 22px;
-    margin-top: 10px;
+    width: 2rem;
+    height: 2.2rem;
+    margin-top: 1rem;
 
     &:last-child {
       transform: scale(1.05);

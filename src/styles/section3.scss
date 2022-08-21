@@ -1,16 +1,15 @@
 .section3 {
-  height: 156px;
+  height: 15.6rem;
   background-color: rgba(229, 236, 247, 0.5);
-  border-top: 1px solid transparent;
+  border-top: 0.1rem solid transparent;
 
   &>div {
-   max-width: 632px;
     margin: 0 auto;
 
     p {
       font-family: Lora, serif;
-      font-size: 16px;
-      margin: 5px 0;
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
     }
   }
 }
@@ -18,7 +17,7 @@
 .item_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1rem;
 
   div {
     display: flex;
@@ -28,19 +27,19 @@
     img {
       width: 10vw;
       height: 10vw;
-      max-width: 70px;
-      max-height: 70px;
+      max-width: 7rem;
+      max-height: 7rem;
     }
 
     p {
       text-align: center;
       font-family: "Source Sance Pro", sans-serif;
-      font-size: 11px;
+      font-size: 1.1rem;
     }
   }
 }
 
 p {
   font-family: Lora, serif;
-  font-size: 16px;
+  font-size: 1.6rem;
 }

@@ -1,17 +1,17 @@
 .section5 {
   background-color: rgb(229, 236, 247);
-  padding: 20px 0;
+  padding: 2rem 0;
   position: relative;
 
   & > img:first-child {
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -5rem;
   }
 
   & > img:last-child {
     position: absolute;
-    bottom: 230px;
+    bottom: 23rem;
   }
 }
 
@@ -21,7 +21,7 @@
 
   .response {
     display: flex;
-    margin-top: 30px;
+    margin-top: 3rem;
 
     .response_item {
       width: 60%;
@@ -32,13 +32,13 @@
         color: $color2;
         font-family: "Source Sance Pro", serif;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 1.4rem;
       }
 
       span::before {
         content: "_____";
         display: block;
-        padding-bottom: 10px;
+        padding-bottom: 1rem;
         color: $color1;
       }
     }
@@ -49,31 +49,31 @@
   }
 
   .photo {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
   }
 
   input, textarea {
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
     width: 100%;
     font-family: "Source Sance Pro";
-    font-size: 12px;
-    padding-left: 10px;
+    font-size: 1.2rem;
+    padding-left: 1rem;
   }
 
   input {
-    height: 25px;
+    height: 2.5rem;
   }
 
   textarea {
-    height: 100px;
+    height: 10rem;
     resize: none;
   }
 
   button {
-    box-shadow: 1px 1px 5px 1px $color2;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem $color2;
     color: $color5;
   }
 }

@@ -1,10 +1,10 @@
 .section2 {
-  height: 405px;
+  height: 40.5rem;
 
 
   .women_bg {
     display: flex;
-    height: 260px;
+    height: 26rem;
     margin: 0 auto;
     background-image: url("/images/women.png");
     background-position: right bottom;
@@ -16,10 +16,10 @@
 
   &_content {
     width: 45%;
-    padding-top: 40px;
+    padding-top: 4rem;
 
     p{
-      padding-left: 20px;
+      padding-left: 2rem;
     }
   }
 }
@@ -29,10 +29,10 @@
   justify-content: center;
 
   .flowers_bg {
-    width: 210px;
-    height: 145px;
+    width: 21rem;
+    height: 14.5rem;
     position: relative;
-    -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
 
     img {
       width: 100%;
@@ -41,17 +41,17 @@
 
     div {
       font-family: Lora;
-      font-size: 14px;
+      font-size: 1.4rem;
       background-color: $color2;
-      width: 130px;
-      height: 30px;
+      width: 13rem;
+      height: 3rem;
       color: $color5;
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      bottom: 20px;
-      left: calc(50% - 65px);
+      bottom: 2rem;
+      left: calc(50% - 6.5rem);
     }
   }
 }
