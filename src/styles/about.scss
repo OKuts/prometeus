@@ -1,0 +1,80 @@
+.section2 {
+  position: relative;
+
+  .flowers {
+    display: flex;
+    justify-content: center;
+
+    .flowers_bg {
+      width: 21rem;
+      position: relative;
+      -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        font-family: $lora;
+        font-size: 1.4rem;
+        background-color: $color2;
+        opacity: 0.8;
+        width: 70%;
+        height: 3rem;
+        color: $color5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 2rem;
+        left: 15%;
+      }
+    }
+  }
+
+  .about {
+    min-height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .about_content {
+      align-self: center;
+    }
+
+    .women {
+      position: relative;
+      align-self: flex-end;
+
+      img:last-child {
+        position: relative;
+        bottom: -4px;
+        width: 100%;
+      }
+
+      .women_bg {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: -5rem;
+        width: 125%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section2{
+    .flowers {
+      flex-direction: column;
+
+      .flowers_bg {
+        width: 100%;
+      }
+    }
+    .about {
+      padding-top: 50px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

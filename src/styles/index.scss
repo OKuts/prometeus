@@ -1,16 +1,15 @@
+@import 'fonts';
+@import 'vars';
 @import 'global';
+@import 'media';
 @import 'header';
 @import 'footer';
 @import 'bg';
 @import 'mail';
-@import 'section1';
-@import 'section2';
-@import 'section3';
-@import 'section4';
-@import 'section5';
-@import 'section6';
+@import 'first';
+@import 'about';
+@import 'aboutAdd';
+@import 'catalog';
+@import 'response';
+@import 'delivery';
 @import 'social';
-
-html {
-  font-size: 20px;
-}

@@ -3,37 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-$color1: #FFC2C7;
-$color2: #A9BFE4;
-$color3: #989EC3;
-$color4: #351F21;
-$color5: #fff;
-
-@font-face {
-  font-family: 'Source Sance Pro';
-  src: url('./fonts/SourceSansPro-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Sance Pro SemiBold';
-  src: url('./fonts/SourceSansPro-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('./fonts/Lora-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lora SemiBold';
-  src: url('./fonts/Lora-SemiBold.ttf') format('truetype');
-}
-
 .container {
   max-width: 76rem;
   margin: 0 auto;
-  padding: 0 5px;
+  overflow: hidden;
+  min-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content {
@@ -42,15 +17,9 @@ $color5: #fff;
   padding: 0 10px;
 }
 
-.logo {
-  height: 5.5rem;
-  width: 13.8rem;
-  display: inline-block;
-  margin-bottom: 2rem;
-}
-
 input, textarea {
   border: none;
+  font-size: 1rem;
 
   &:focus{
     outline: none;
@@ -62,7 +31,7 @@ input, textarea {
   width: 8.9rem;
   height: 2.6rem;
   border-radius: 1.3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   &:after {
     content: '';
@@ -83,21 +52,20 @@ input, textarea {
 }
 
 .h2 {
-  font-family: Lora, serif;
+  font-family: $lora;
   font-size: 2.4rem;
   margin-bottom: 1.2em;
 }
 
 .p {
-  font-family: "Source Sance Pro", sans-serif;
+  font-family: $source;
   font-size: 1.4rem;
   margin-bottom: 1.2em;
 }
 
-.section23 {
-  background: url('/images/abstract_background.png');
-  background-position: bottom 13.5rem right;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  position: relative;
+
+@media screen and (max-width: 760px) {
+  .content {
+    padding: 0 30px;
+  }
 }

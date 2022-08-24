@@ -5,13 +5,13 @@
 
   & > img:first-child {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: -5rem;
   }
 
   & > img:last-child {
     position: absolute;
-    bottom: 23rem;
+    bottom: 30rem;
   }
 }
 
@@ -25,12 +25,11 @@
 
     .response_item {
       width: 60%;
-
       justify-content: right;
 
       span {
         color: $color2;
-        font-family: "Source Sance Pro", serif;
+        font-family: $source;
         font-weight: bold;
         font-size: 1.4rem;
       }
@@ -58,7 +57,7 @@
     margin-bottom: 2rem;
     border-radius: 1rem;
     width: 100%;
-    font-family: "Source Sance Pro";
+    font-family: $source;
     font-size: 1.2rem;
     padding-left: 1rem;
   }
@@ -75,5 +74,17 @@
   button {
     box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem $color2;
     color: $color5;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .responses {
+    .response {
+      flex-direction: column;
+      align-items: center;
+      .response_item {
+        width: 80%;
+      }
+    }
   }
 }

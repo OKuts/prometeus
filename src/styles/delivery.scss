@@ -1,11 +1,10 @@
 .section6 {
-  height: 47rem;
-  padding: 5rem 0 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .select {
   display: grid;
-  grid-template-rows: repeat(2, 14.5rem);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem 5rem;
   margin-top: 5rem;
@@ -17,7 +16,7 @@
 
     p {
       text-align: center;
-      font-family: 'Source Sance Pro';
+      font-family: $source;
       font-size: 1.3rem;
       white-space: pre-line;
       margin-top: 2rem;
@@ -32,7 +31,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Lora;
+    font-family: Lora, serif;
     box-shadow: 0rem 0.9rem 1.9rem 0rem $color1;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .select {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

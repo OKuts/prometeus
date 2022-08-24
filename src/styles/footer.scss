@@ -6,9 +6,23 @@
   align-items: center;
   color: white;
   flex-direction: column;
+  position: relative;
+
+  .footer_img_add {
+    position: absolute;
+    right: -250px;
+    top: -250px;
+    transform: rotate(-45deg);
+  }
+
+  .footer_logo {
+    height: 5.5rem;
+    width: 13.8rem;
+    margin-bottom: 2rem;
+  }
 
   .title {
-    font-family: 'Lora';
+    font-family: $lora;
     font-weight: 400;
     font-size: 1.4rem;
   }
@@ -22,7 +36,27 @@
 
   .contacts_item {
     list-style-type: none;
-    font-family: 'Source Sance Pro', sans-serif;
+    font-family: $source;
     font-size: 1.1rem;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+
+    .sign, .horizontal {
+      display: none;
+    }
+
+    &__info {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 2rem;
+    }
+
+    .footer_logo {
+      order: 1;
+    }
   }
 }

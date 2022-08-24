@@ -1,34 +1,90 @@
 header {
   height: 7rem;
+  padding: 0 20px;
   background-color: $color2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 
-  a {
-    text-decoration: none;
-    color: white;
+  .logo {
+    height: 5.5rem;
+    width: 13.8rem;
   }
 
-  span {
-    margin-right: 2rem;
-    padding: 0.5rem 0;
-    border-bottom: 0.1rem solid transparent;
-    font-family: 'Lora SemiBold', serif;
-    font-size: 1.4rem;
+  .navbar {
+    flex-grow: 1;
+  }
 
-    &:hover {
-      border-bottom: 0.1rem solid white;
-      cursor: pointer;
+  .header_nav {
+    padding: 0.5rem;
+    font-family: $loraSemi;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 0.1rem solid transparent;
+      margin-right: 3%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        border-bottom: 0.1rem solid white;
+        cursor: pointer;
+      }
     }
   }
+
+  .icon_wrap {
+    order: 2;
+  }
+
   .icon {
     width: 2rem;
     height: 2rem;
     margin-left: 1.5rem;
+
+  }
+
+  .burger {
+    height: 2.2rem;
+    width: 2.8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    & > div {
+      border: 2px solid $color5;
+    }
   }
 }
 
+@media screen and (max-width: 760px) {
+  header {
+    height: 59px;
+    justify-content: space-between;
+
+    .logo {
+      order: 1;
+    }
+
+    .burger {
+      display: flex;
+    }
+
+    .navbar {
+      flex-grow: 0;
+    }
+
+    .header_nav {
+      display: none;
+    }
+  }
+}
 
 
 

@@ -1,4 +1,4 @@
-export const Section6 = () => {
+export const Delivery = () => {
   const select = [
     'Ви замовляєте букет через каталог',
     'Сповістимо Вас дзвінком або повідомленням про доставку букета',
@@ -8,7 +8,7 @@ export const Section6 = () => {
     'Доставляємо букет одержувачу протягом 2-х годин'
   ]
   return (
-    <section className={'section6'}>
+    <section className={'section6 content'}>
       <h2 className={'h2'}>Доставка і оплата</h2>
       <div className={'select'}>
         {select.map((el, i) =>

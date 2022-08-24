@@ -1,0 +1,43 @@
+.section1 {
+  background: url("/images/bg_web-no-background.png") no-repeat;
+  background-position: right center;
+  background-size: 50%;
+
+  .first_content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+
+    & > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section1 {
+    background: url("/images/bg_mob-no-background.png") no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    height: calc(100vh - 59px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .first_content {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      padding: 0 0 calc(200px - 20%) 0;
+
+      h2, p {
+        text-align: center;
+      }
+    }
+  }
+}

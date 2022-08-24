@@ -1,4 +1,4 @@
-export const Section3 = () => {
+export const AboutAdd = () => {
   const data = [
     ['constructor.png', 'Конструктор унікального букета'],
     ['delivery.png', 'Безкоштовна доставка по місту до 2-х годин'],

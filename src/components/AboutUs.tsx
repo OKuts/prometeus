@@ -1,14 +1,14 @@
 import {Social} from "./Social";
 
-export const Section2 = () => {
+export const AboutUs = () => {
   const flowers = [
     ['bouquets.jpg', 'Букети'],
     ['natural_flowers.jpg', 'Живі квіти'],
     ['own_bouquet.png', '"Свій букет"']]
 
   return (
-    <section className={'section2 content'} id={'about'}>
-      <div className={'flowers'}>
+    <section className={'section2'} id={'about'}>
+      <div className={'flowers content'}>
         {flowers.map((el, i) =>
           <div className={'flowers_bg'} key={flowers[i][0]}>
             <img src={`/images/${flowers[i][0]}`} alt="flowers"/>
@@ -16,8 +16,8 @@ export const Section2 = () => {
           </div>
         )}
       </div>
-      <div className={'women_bg'}>
-        <div className="section2_content">
+      <div className={'about content'}>
+        <div className="about_content">
           <h2 className={'h2'}>Про нас</h2>
           <p className={'p'}>Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках. Очі
             розбігаються від такого достатку.</p>
@@ -25,9 +25,12 @@ export const Section2 = () => {
             ніжні
             фіалки, усипані квітами, аспарагуси, фікуси.</p>
         </div>
-        {/*<Social cn={'vertical'}/>*/}
+        <div className={'women'}>
+          <img className={'women_bg'} src="/images/abstract_background.png" alt=""/>
+          <img src="/images/women.png" alt=""/>
+        </div>
       </div>
-
+      <Social cn={'vertical'}/>
     </section>
   )
 }

@@ -14,7 +14,7 @@ export const Card: FC<CardProps> = ({card, id}) => {
       <img src={image} alt=""/>
       <p>{name}:</p>
       <p>{flovers}</p>
-      <p>{price} грн</p>
+      <p className={'price'}>{price} грн</p>
       <Button text={'В кошик'} border={'border1'} background={'color5'}/>
     </div>
   )

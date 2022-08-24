@@ -8,8 +8,7 @@ interface IComment {
   email: string
 }
 
-
-export const Section5 = () => {
+export const Response = () => {
   const [comments, setComments] = useState<IComment[]>([])
 
   useEffect(() => {
@@ -22,7 +21,7 @@ export const Section5 = () => {
 
   return (
     <section className={'section5'}>
-      <img src="/images/flowers 1.png" alt=""/>
+      <img className={'img_add'} src="/images/flowers 1.png" alt=""/>
       <div className={'content responses'}>
         <h2 className={'h2'}>Відгуки</h2>
         <div className={'response'}>
@@ -45,7 +44,7 @@ export const Section5 = () => {
         <textarea placeholder={'Ваш відгук:'}></textarea>
         <Button text={'Відправити'} border={'border1'} background={'color1'}/>
       </div>
-      <img src="/images/flowers 2.png" alt=""/>
+      <img className={'img_add'} src="/images/flowers 2.png" alt=""/>
     </section>
   )
 }

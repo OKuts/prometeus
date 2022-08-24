@@ -18,21 +18,27 @@
 }
 
 .vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: block;
   position: absolute;
-  right: 3rem;
-  top: 24rem;
+  right: 15px;
+  top: 50%;
 
   img {
+    display: block;
     width: 2rem;
     height: 2.2rem;
     margin-top: 1rem;
 
     &:last-child {
-      transform: scale(1.05);
+      transform: scale(1.1);
       position: relative;
     }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .vertical {
+    bottom: 5%;
+    top: auto;
   }
 }

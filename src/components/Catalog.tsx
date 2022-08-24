@@ -8,7 +8,7 @@ export interface ICard {
   flovers: string
 }
 
-export const Section4 = () => {
+export const Catalog = () => {
   const [cards, setCards] = useState<ICard[]>([])
   const [current, setCurrent] = useState(0)
 
