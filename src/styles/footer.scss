@@ -1,11 +1,14 @@
 .footer {
   background-color: $color2;
   padding: 0.8rem;
-  display: flex;
-  align-items: center;
   color: white;
-  flex-direction: column;
   position: relative;
+
+  .footer_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .footer_img_add {
     position: absolute;
