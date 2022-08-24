@@ -17,7 +17,7 @@ export const Footer = () => {
   }
 
   return (
-      <footer className={'footer'} id={'footer'}>
+      <footer className={'footer content'} id={'footer'}>
         <img className={'img_add footer_img_add'} src="/images/flowers 3.png" alt=""/>
         <img className={'footer_logo'} src='./images/logo.png' alt={'logo'}/>
         <div className={'footer__info'}>
